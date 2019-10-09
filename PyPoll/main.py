@@ -35,8 +35,9 @@ with open(pypoll_csv, newline='') as csvfile:
 sum_votes = candidate_votes[0]
 number_votes = 0
 percentage = []
+
+#Looping "x" to get percentages
 for x in range(len(candidate_names)):
-    #Looping "x" to get percentages
     percentage_votes = round(candidate_votes[x]/totalvotes*100, 3)
     percentage.append(percentage_votes)
     
